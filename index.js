@@ -98,7 +98,7 @@ function addChoreButton(roommates) {
     btn.className = "btn btn-outline-dark";
     btn.innerHTML = "Add Chore";
     btn.onclick = () => {
-        roommates.chores.push(new Chore( //error: Cannot read push
+        roommates.chores.push(new Chore(
             getValue(`task-input-${roommates.id}`), 
             getValue(`date-start-input-${roommates.id}`), 
             getValue(`date-end-input-${roommates.id}`)));
